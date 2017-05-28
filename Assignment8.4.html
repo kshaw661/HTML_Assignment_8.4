@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 8.4 : Change href</title>
+		
+		<!-- Internal Style Example -->
+		<style>
+			body{margin:5px; padding:5px;}
+			.div_one{ width:85%;background-color:#ccc;margin:10px; padding:30px;}
+			.form_text{ width:50%;height:25px;padding:0 10px; background-color:#F48024;opacity:.8;}
+			 label{ font-weight:bold;font-size:18px;}
+			.click_class{ padding:10px 15px; border:2px solid #000;text-decoration:none;background-color:#5EBA7D;color:#000;border-radius:25px;	}
+			.click_class:hover{ background-color:#000;color:#5EBA7D;text-transform:.5; }
+			
+		</style>
+		
+	</head>
+	<body>
+		<div class="div_one">	
+			<a href="http://www.acadgild.com" id='acadgild'>jQuery Tutorial</a>
+		</div>
+	</body>
+	<!-- External Javascript -->
+		<script src="https://code.jquery.com/jquery-1.12.4.js" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function(){
+				jQuery("a[href='http://www.acadgild.com']").attr('href', 'http://www.google.com/')
+			});
+		</script>
+	<!-- End -->
+</html> 
+
+    
